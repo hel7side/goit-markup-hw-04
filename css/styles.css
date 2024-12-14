@@ -304,13 +304,26 @@ body {
   }
   
   .portfolio-item {
+    overflow: hidden;
+    position: relative;
     border-bottom: 1px solid #dcdcdc;
     margin-right: 24px;
     margin-bottom: 48px;
     row-gap: 48px;
     margin-bottom: 32px;
   }
-  
+
+  .overlay {
+    position: absolute;
+    transform: translateY(100%);
+    top: 0;
+    left: 0;
+  }
+
+  .overlay-text {
+    color: red;
+  }
+
   .portfolio-list li:nth-child(3n) {
     margin-right: 0;
   }
